@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://pantrymind.github.io'),
+  metadataBase: new URL('https://pantrymind.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://pantrymind.github.io',
+    url: 'https://pantrymind.app',
     title: 'PantryMind - Smart Household Inventory Tracking App',
     description: 'Never waste food again. PantryMind helps families and roommates track their kitchen inventory with smart AI scanning and real-time household sync.',
     siteName: 'PantryMind',

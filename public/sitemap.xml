@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pantrymind.github.io/</loc>
+    <loc>https://pantrymind.app/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://pantrymind.github.io/privacy</loc>
+    <loc>https://pantrymind.app/privacy</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pantrymind.github.io/support</loc>
+    <loc>https://pantrymind.app/support</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pantrymind.github.io/terms</loc>
+    <loc>https://pantrymind.app/terms</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <priority>0.7</priority>
   </url>
