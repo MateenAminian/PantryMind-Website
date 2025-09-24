@@ -2,7 +2,9 @@
 
 import { Navigation } from '@/components/ui/navigation';
 import { Footer } from '@/components/ui/footer';
+import { WaitlistForm } from '@/components/ui/waitlist-form';
 import { Scan, Users, Shield, Bell, BarChart3, Smartphone, ChevronDown, Star, Download, ArrowRight, CheckCircle, Camera, FolderSync, PieChart } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -15,12 +17,18 @@ export default function Home() {
           <div className="text-center max-w-4xl mx-auto">
             <div className="flex justify-center mb-6">
               <div className="relative">
-                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl flex items-center justify-center app-shadow">
-                  <Smartphone className="w-12 h-12 text-white" />
+                <div className="w-20 h-20 bg-gradient-to-br from-teal-400 to-teal-600 rounded-2xl flex items-center justify-center app-shadow">
+                  <Image 
+                    src="/logo.png" 
+                    alt="PantryMind Logo" 
+                    width={48} 
+                    height={48}
+                    className="w-12 h-12"
+                  />
                 </div>
                 <div className="absolute -top-2 -right-2">
-                  <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-500 text-white">
-                    Coming Soon
+                  <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-orange-500 text-white">
+                    Beta Available
                   </span>
                 </div>
               </div>
@@ -36,12 +44,20 @@ export default function Home() {
               Track your kitchen inventory with AI-powered scanning and real-time household sync.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <button className="inline-flex items-center px-8 py-4 bg-black text-white rounded-xl font-semibold hover:bg-gray-800 transition-colors cursor-not-allowed opacity-75">
-                <Download className="w-5 h-5 mr-2" />
-                Download on App Store
-              </button>
-              <p className="text-sm text-gray-500">iOS 16.6+ • Coming Soon</p>
+            <div className="mb-12">
+              <div className="text-center mb-6">
+              <div className="inline-flex items-center px-6 py-3 bg-orange-100 text-orange-800 rounded-full text-sm font-medium mb-4">
+                <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                Closed Beta • Invite Only
+              </div>
+              <p className="text-lg text-gray-600 mb-4">
+                Join our exclusive waitlist for a chance to access the closed beta
+              </p>
+            </div>
+              
+              <div className="max-w-md mx-auto">
+                <WaitlistForm />
+              </div>
             </div>
             
             {/* Key Stats */}
@@ -232,24 +248,70 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Screenshot placeholders */}
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="relative group">
-                <div className="w-full aspect-[9/19] bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl p-6 flex items-center justify-center shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl flex items-center justify-center mb-4 mx-auto">
-                      <Smartphone className="w-8 h-8 text-white" />
-                    </div>
-                    <p className="text-gray-600 font-medium">
-                      {i === 1 && "Scan Interface"}
-                      {i === 2 && "Inventory List"}
-                      {i === 3 && "Household Sync"}
-                      {i === 4 && "Smart Alerts"}
-                    </p>
-                  </div>
-                </div>
+            {/* App Screenshots */}
+            <div className="relative group">
+              <div className="w-full aspect-[9/19] bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                <Image 
+                  src="/screenshot-onboarding.png" 
+                  alt="PantryMind Onboarding Screen" 
+                  width={300} 
+                  height={600}
+                  className="w-full h-full object-cover"
+                />
               </div>
-            ))}
+              <div className="absolute bottom-4 left-4 right-4 bg-black/80 text-white p-3 rounded-lg">
+                <p className="text-sm font-medium">Get Started</p>
+                <p className="text-xs opacity-80">Welcome to PantryMind</p>
+              </div>
+            </div>
+            
+            <div className="relative group">
+              <div className="w-full aspect-[9/19] bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                <Image 
+                  src="/screenshot-inventory.png" 
+                  alt="PantryMind Inventory Screen" 
+                  width={300} 
+                  height={600}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute bottom-4 left-4 right-4 bg-black/80 text-white p-3 rounded-lg">
+                <p className="text-sm font-medium">Smart Inventory</p>
+                <p className="text-xs opacity-80">Track items with AI</p>
+              </div>
+            </div>
+            
+            <div className="relative group">
+              <div className="w-full aspect-[9/19] bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                <Image 
+                  src="/screenshot-details.png" 
+                  alt="PantryMind Item Details" 
+                  width={300} 
+                  height={600}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute bottom-4 left-4 right-4 bg-black/80 text-white p-3 rounded-lg">
+                <p className="text-sm font-medium">Item Details</p>
+                <p className="text-xs opacity-80">Manage expiration dates</p>
+              </div>
+            </div>
+            
+            <div className="relative group">
+              <div className="w-full aspect-[9/19] bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                <Image 
+                  src="/screenshot-scan.png" 
+                  alt="PantryMind Scan Screen" 
+                  width={300} 
+                  height={600}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute bottom-4 left-4 right-4 bg-black/80 text-white p-3 rounded-lg">
+                <p className="text-sm font-medium">AI Scanning</p>
+                <p className="text-xs opacity-80">Camera & photo library</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -391,15 +453,14 @@ export default function Home() {
             Ready to transform your kitchen?
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Join the waitlist and be the first to experience smart household inventory tracking
+            Join our exclusive waitlist for a chance to access the closed beta
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="inline-flex items-center px-8 py-4 bg-black text-white rounded-xl font-semibold hover:bg-gray-800 transition-colors cursor-not-allowed opacity-75">
-              <Download className="w-5 h-5 mr-2" />
-              Coming Soon to App Store
-            </button>
-            <p className="text-sm text-gray-500">iOS 16.6+ • Free Download</p>
+          <div className="max-w-md mx-auto">
+            <WaitlistForm />
           </div>
+          <p className="text-sm text-gray-500 mt-4">
+            Limited beta spots available • iOS 16.6+ required
+          </p>
         </div>
       </section>
 

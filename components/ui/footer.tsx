@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Smartphone, Mail, Shield, FileText } from 'lucide-react';
+import { Mail, Shield, FileText } from 'lucide-react';
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -9,8 +10,14 @@ export function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
-                <Smartphone className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg flex items-center justify-center">
+                <Image 
+                  src="/logo.png" 
+                  alt="PantryMind Logo" 
+                  width={20} 
+                  height={20}
+                  className="w-5 h-5"
+                />
               </div>
               <span className="text-xl font-bold">PantryMind</span>
             </div>
@@ -18,8 +25,8 @@ export function Footer() {
               Smart household inventory tracking for families and roommates. Never waste food again with AI-powered scanning and real-time sync.
             </p>
             <div className="flex items-center space-x-2 text-sm text-gray-400">
-              <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-                Coming Soon
+              <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
+                Beta Available
               </span>
               <span>Available on iOS 16.6+</span>
             </div>

@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Smartphone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,8 +25,14 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
-              <Smartphone className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg flex items-center justify-center">
+              <Image 
+                src="/logo.png" 
+                alt="PantryMind Logo" 
+                width={20} 
+                height={20}
+                className="w-5 h-5"
+              />
             </div>
             <span className="text-xl font-bold text-gray-900">PantryMind</span>
           </Link>

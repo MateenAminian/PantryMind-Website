@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/ui/navigation';
 import { Footer } from '@/components/ui/footer';
 import { Mail, MessageCircle, Book, HelpCircle, Bug, Lightbulb } from 'lucide-react';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -18,8 +19,14 @@ export default function SupportPage() {
           {/* Header */}
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl flex items-center justify-center">
-                <HelpCircle className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-teal-600 rounded-2xl flex items-center justify-center">
+                <Image 
+                  src="/logo.png" 
+                  alt="PantryMind Logo" 
+                  width={32} 
+                  height={32}
+                  className="w-8 h-8"
+                />
               </div>
             </div>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Help & Support</h1>
