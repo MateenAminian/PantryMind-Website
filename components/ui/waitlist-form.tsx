@@ -56,8 +56,8 @@ export function WaitlistForm() {
       setEmail('');
       
       // Track waitlist signup for analytics
-      if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('event', 'waitlist_signup', {
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'waitlist_signup', {
           event_category: 'engagement',
           event_label: 'beta_waitlist'
         });
