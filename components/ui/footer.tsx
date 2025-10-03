@@ -25,8 +25,8 @@ export function Footer() {
               Smart household inventory tracking for families and roommates. Never waste food again with AI-powered scanning and real-time sync.
             </p>
             <div className="flex items-center space-x-2 text-sm text-gray-400">
-              <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
-                Beta Available
+              <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                Now Available
               </span>
               <span>Available on iOS 16.6+</span>
             </div>

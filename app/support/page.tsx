@@ -172,8 +172,8 @@ export default function SupportPage() {
                     How much does PantryMind cost?
                   </h3>
                   <p className="text-gray-600">
-                    PantryMind will be free to download with basic features included. 
-                    Premium features will be available through in-app purchase.
+                    PantryMind is free to download with core inventory tracking features included. 
+                    Premium features like advanced analytics and unlimited household members are available through in-app purchase.
                   </p>
                 </div>
               </div>

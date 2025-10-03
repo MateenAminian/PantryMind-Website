@@ -10,8 +10,10 @@ export const metadata: Metadata = {
     default: 'PantryMind - Smart Household Inventory Tracking App',
     template: '%s | PantryMind'
   },
-  description: 'PantryMind helps families and roommates keep track of their food inventory, reducing waste and saving money. AI-powered food scanning with real-time household sync.',
+  description: 'Download PantryMind from the App Store. AI-powered food scanning, real-time household sync, and smart notifications to reduce food waste. Free on iOS.',
   keywords: [
+    'download PantryMind',
+    'App Store',
     'household inventory',
     'food tracking',
     'AI scanning',
@@ -38,13 +40,13 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://pantrymind.app',
     title: 'PantryMind - Smart Household Inventory Tracking App',
-    description: 'Never waste food again. PantryMind helps families and roommates track their kitchen inventory with smart AI scanning and real-time household sync.',
+    description: 'Download PantryMind from the App Store. Never waste food again with AI-powered scanning and real-time household sync.',
     siteName: 'PantryMind',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'PantryMind - Smart Household Inventory Tracking App',
-    description: 'Never waste food again. PantryMind helps families and roommates track their kitchen inventory with smart AI scanning and real-time household sync.',
+    description: 'Download PantryMind from the App Store. Never waste food again with AI-powered scanning and real-time household sync.',
   },
   robots: {
     index: true,

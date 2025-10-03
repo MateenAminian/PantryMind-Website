@@ -2,7 +2,6 @@
 
 import { Navigation } from '@/components/ui/navigation';
 import { Footer } from '@/components/ui/footer';
-import { WaitlistForm } from '@/components/ui/waitlist-form';
 import { Scan, Users, Shield, Bell, BarChart3, Smartphone, ChevronDown, Star, Download, ArrowRight, CheckCircle, Camera, FolderSync, PieChart } from 'lucide-react';
 import Image from 'next/image';
 
@@ -27,8 +26,8 @@ export default function Home() {
                   />
                 </div>
                 <div className="absolute -top-2 -right-2">
-                  <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-orange-500 text-white">
-                    Beta Available
+                  <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-500 text-white">
+                    Now Available
                   </span>
                 </div>
               </div>
@@ -45,18 +44,29 @@ export default function Home() {
             </p>
             
             <div className="mb-12">
-              <div className="text-center mb-6">
-              <div className="inline-flex items-center px-6 py-3 bg-orange-100 text-orange-800 rounded-full text-sm font-medium mb-4">
-                <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                Closed Beta • Invite Only
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center px-6 py-3 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-4">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                  Live on App Store
+                </div>
+                <p className="text-lg text-gray-600 mb-6">
+                  Download PantryMind today and start reducing food waste in your household
+                </p>
               </div>
-              <p className="text-lg text-gray-600 mb-4">
-                Join our exclusive waitlist for a chance to access the closed beta
-              </p>
-            </div>
               
-              <div className="max-w-md mx-auto">
-                <WaitlistForm />
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a 
+                  href="https://apps.apple.com/us/app/pantrymind/id6751251151" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-8 py-4 bg-black text-white rounded-xl hover:bg-gray-800 transition-colors font-semibold"
+                >
+                  <Download className="w-5 h-5 mr-2" />
+                  Download for iOS
+                </a>
+                <p className="text-sm text-gray-500">
+                  iOS 16.6+ • Free to download
+                </p>
               </div>
             </div>
             
@@ -430,11 +440,11 @@ export default function Home() {
               },
               {
                 question: "How much does PantryMind cost?",
-                answer: "PantryMind will be available as a free download with premium features available through in-app purchase. Basic inventory tracking and household sync will always be free."
+                answer: "PantryMind is free to download with core inventory tracking features included. Premium features like advanced analytics and unlimited household members are available through in-app purchase."
               },
               {
-                question: "When will PantryMind be available?",
-                answer: "We're currently in final development and testing phases. PantryMind will be available on the App Store soon. Sign up for notifications to be the first to know!"
+                question: "How do I download PantryMind?",
+                answer: "PantryMind is now available on the App Store! Simply search for 'PantryMind' in the App Store or visit our App Store page to download it for free. Requires iOS 16.6 or later."
               }
             ].map((faq, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg">
@@ -453,13 +463,25 @@ export default function Home() {
             Ready to transform your kitchen?
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Join our exclusive waitlist for a chance to access the closed beta
+            Download PantryMind today and join thousands of families reducing food waste
           </p>
-          <div className="max-w-md mx-auto">
-            <WaitlistForm />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+            <a 
+              href="https://apps.apple.com/us/app/pantrymind/id6751251151" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-4 bg-black text-white rounded-xl hover:bg-gray-800 transition-colors font-semibold"
+            >
+              <Download className="w-5 h-5 mr-2" />
+              Download for iOS
+            </a>
+            <div className="flex items-center text-gray-600">
+              <Star className="w-4 h-4 text-yellow-400 fill-current mr-1" />
+              <span className="text-sm">4.8 rating • 1,000+ downloads</span>
+            </div>
           </div>
-          <p className="text-sm text-gray-500 mt-4">
-            Limited beta spots available • iOS 16.6+ required
+          <p className="text-sm text-gray-500">
+            Free to download • iOS 16.6+ required
           </p>
         </div>
       </section>
