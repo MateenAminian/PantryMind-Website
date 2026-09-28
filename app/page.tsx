@@ -165,7 +165,7 @@ export default function Home() {
               <p className="text-gray-600">
                 Scan images are sent only to process AI extraction and aren&apos;t kept by
                 PantryMind. Household data stays with the people you invite.{' '}
-                <a href="/privacy" className="text-teal-700 hover:underline">
+                <a href="/privacy/" className="text-teal-700 hover:underline">
                   Read our Privacy Policy
                 </a>
                 .

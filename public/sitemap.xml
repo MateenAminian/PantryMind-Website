@@ -6,17 +6,17 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://pantrymind.app/privacy</loc>
+    <loc>https://pantrymind.app/privacy/</loc>
     <lastmod>2026-09-28</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pantrymind.app/terms</loc>
+    <loc>https://pantrymind.app/terms/</loc>
     <lastmod>2026-09-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pantrymind.app/support</loc>
+    <loc>https://pantrymind.app/support/</loc>
     <lastmod>2026-09-28</lastmod>
     <priority>0.8</priority>
   </url>

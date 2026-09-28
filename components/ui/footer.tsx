@@ -38,7 +38,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/privacy"
+                  href="/privacy/"
                   className="text-gray-400 hover:text-white transition-colors flex items-center"
                 >
                   <Shield className="w-4 h-4 mr-2" />
@@ -47,7 +47,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/terms"
+                  href="/terms/"
                   className="text-gray-400 hover:text-white transition-colors flex items-center"
                 >
                   <FileText className="w-4 h-4 mr-2" />
@@ -56,7 +56,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/support"
+                  href="/support/"
                   className="text-gray-400 hover:text-white transition-colors flex items-center"
                 >
                   <Mail className="w-4 h-4 mr-2" />

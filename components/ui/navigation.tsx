@@ -62,10 +62,10 @@ export function Navigation() {
             >
               How It Works
             </a>
-            <Link href="/privacy" className="text-gray-700 hover:text-green-600 transition-colors">
+            <Link href="/privacy/" className="text-gray-700 hover:text-green-600 transition-colors">
               Privacy
             </Link>
-            <Link href="/support" className="text-gray-700 hover:text-green-600 transition-colors">
+            <Link href="/support/" className="text-gray-700 hover:text-green-600 transition-colors">
               Support
             </Link>
             <a
@@ -112,14 +112,14 @@ export function Navigation() {
                 How It Works
               </a>
               <Link
-                href="/privacy"
+                href="/privacy/"
                 className="block px-3 py-2 text-gray-700 hover:text-green-600"
                 onClick={() => setIsOpen(false)}
               >
                 Privacy
               </Link>
               <Link
-                href="/support"
+                href="/support/"
                 className="block px-3 py-2 text-gray-700 hover:text-green-600"
                 onClick={() => setIsOpen(false)}
               >

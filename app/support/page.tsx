@@ -143,7 +143,7 @@ export default function SupportPage() {
                     Inventory is shared only with your household. Scan images are sent for
                     AI extraction and are not stored by PantryMind as inventory photos. Full
                     details are in our{' '}
-                    <Link href="/privacy" className="text-teal-700 hover:underline">
+                    <Link href="/privacy/" className="text-teal-700 hover:underline">
                       Privacy Policy
                     </Link>
                     .
