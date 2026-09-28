@@ -77,7 +77,7 @@ export default function TermsPage() {
               <p className="text-gray-600 mb-4">
                 By downloading, installing, or using PantryMind (“the App”), you agree to
                 these Terms of Service (“Terms”) and our{' '}
-                <Link href="/privacy" className="text-blue-600 hover:underline">
+                <Link href="/privacy/" className="text-blue-600 hover:underline">
                   Privacy Policy
                 </Link>
                 . If you do not agree, do not use the App.
@@ -213,7 +213,7 @@ export default function TermsPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">9. Privacy</h2>
               <p className="text-gray-600 mb-4">
                 Our{' '}
-                <Link href="/privacy" className="text-blue-600 hover:underline">
+                <Link href="/privacy/" className="text-blue-600 hover:underline">
                   Privacy Policy
                 </Link>{' '}
                 explains how we handle account data, household inventory, AI scan images,
