@@ -7,23 +7,23 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    default: 'PantryMind - Smart Household Inventory Tracking App',
-    template: '%s | PantryMind'
+    default: 'PantryMind — Shared Kitchen Inventory & AI Scanning',
+    template: '%s | PantryMind',
   },
-  description: 'Download PantryMind from the App Store. AI-powered food scanning, real-time household sync, and smart notifications to reduce food waste. Free on iOS.',
+  description:
+    'Download PantryMind on the App Store. AI fridge scanning, household sync, expiry alerts, grocery lists, and optional PantryMind Plus. Free to start on iOS.',
   keywords: [
-    'download PantryMind',
+    'PantryMind',
     'App Store',
     'household inventory',
-    'food tracking',
-    'AI scanning',
-    'family app',
-    'food waste reduction',
-    'grocery management',
-    'iOS app',
-    'kitchen organization'
+    'AI food scanning',
+    'fridge inventory',
+    'food waste',
+    'grocery list',
+    'PantryMind Plus',
+    'iOS kitchen app',
   ],
-  authors: [{ name: 'PantryMind Team' }],
+  authors: [{ name: 'PantryMind' }],
   creator: 'PantryMind',
   publisher: 'PantryMind',
   formatDetection: {
@@ -39,14 +39,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://pantrymind.app',
-    title: 'PantryMind - Smart Household Inventory Tracking App',
-    description: 'Download PantryMind from the App Store. Never waste food again with AI-powered scanning and real-time household sync.',
+    title: 'PantryMind — Shared Kitchen Inventory & AI Scanning',
+    description:
+      'Scan your kitchen with AI, sync with your household, and get expiry alerts. Free to start — Plus optional.',
     siteName: 'PantryMind',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PantryMind - Smart Household Inventory Tracking App',
-    description: 'Download PantryMind from the App Store. Never waste food again with AI-powered scanning and real-time household sync.',
+    title: 'PantryMind — Shared Kitchen Inventory & AI Scanning',
+    description:
+      'Scan your kitchen with AI, sync with your household, and get expiry alerts. Free to start — Plus optional.',
   },
   robots: {
     index: true,
